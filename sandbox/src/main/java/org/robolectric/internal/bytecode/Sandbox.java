@@ -28,8 +28,8 @@ public class Sandbox {
 
   @Inject
   public Sandbox(SandboxClassLoader sandboxClassLoader) {
-    this.sandboxClassLoader = sandboxClassLoader;
-    executorService = Executors.newSingleThreadExecutor(mainThreadFactory());
+      this.sandboxClassLoader = sandboxClassLoader;
+      executorService = Executors.newSingleThreadExecutor(mainThreadFactory());
   }
 
   protected ThreadFactory mainThreadFactory() {
